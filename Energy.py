@@ -142,21 +142,6 @@ This function should return a Series named avgGDP with 15 countries and their av
                 
 top_cont = answer_one()
 
-#def pick_cols_year(cur_year, offset, interval):
-#        cols_last_off = [cur_year]
-#        for i in range (0, offset-1):
-#            cur_year = str((pd.Timestamp(cur_year) - pd.DateOffset(years = interval)).year)
-#            cols_last_off.append(cur_year)
-#            
-#        return [ele for ele in reversed(cols_last_off)]
-#            
-#cols_last_ten = pick_cols_year('2015', 10, 1)
-#
-#top_cont = top_cont[cols_last_ten]
-#top_cont["Average_GDP"] = top_cont.agg(np.mean, axis = 1)
-#
-#avgGDP = top_cont["Average_GDP"].sort_values(ascending=False)
-
 def answer_three():
     import pandas as pd 
     import numpy as np
